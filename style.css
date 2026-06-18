@@ -49,9 +49,9 @@ font-size:18px;
 
 .productos{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
-padding:30px;
+padding:20px;
 }
 
 .card{
@@ -164,4 +164,16 @@ button:hover{
 
 .categorias button{
     margin:8px;
+}
+.card h3{
+    color:#0D47A1;
+    font-size:24px;
+}
+
+.card p{
+    font-size:18px;
+}
+
+.card button{
+    margin-top:15px;
 }
