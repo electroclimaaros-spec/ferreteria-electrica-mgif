@@ -5,9 +5,8 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#f4f4f4;
-    color:#333;
 }
 
 /* MENÚ */
@@ -35,7 +34,7 @@ nav a{
 }
 
 .logo{
-    width:220px;
+    width:180px;
     max-width:80%;
     height:auto;
     display:block;
@@ -44,7 +43,7 @@ nav a{
 
 .encabezado h1{
     color:#123d93;
-    font-size:48px;
+    font-size:42px;
     margin-bottom:15px;
 }
 
@@ -52,8 +51,6 @@ nav a{
     color:#ef7d22;
     font-size:20px;
     font-weight:bold;
-    max-width:800px;
-    margin:auto;
 }
 
 /* BUSCADOR */
@@ -67,10 +64,9 @@ nav a{
 
 .buscador input{
     width:350px;
-    max-width:90%;
     padding:15px;
-    border-radius:10px;
     border:1px solid #ccc;
+    border-radius:10px;
     font-size:18px;
 }
 
@@ -81,31 +77,29 @@ nav a{
     padding:15px 30px;
     border-radius:10px;
     font-size:18px;
-    cursor:pointer;
 }
 
 /* BIENVENIDA */
 .hero{
     text-align:center;
-    padding:40px 20px;
+    padding:50px 20px;
 }
 
 .hero h2{
     color:#123d93;
-    font-size:50px;
+    font-size:42px;
     margin-bottom:20px;
 }
 
 .hero p{
-    font-size:24px;
-    line-height:1.5;
+    font-size:22px;
 }
 
-/* CATEGORÍAS */
+/* PRODUCTOS */
 .categorias{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+    gap:30px;
     padding:40px;
 }
 
@@ -115,9 +109,9 @@ nav a{
     overflow:hidden;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
     text-align:center;
-    padding-bottom:20px;
 }
 
+/* IMPORTANTE */
 .categoria img{
     width:100%;
     height:220px;
@@ -126,24 +120,22 @@ nav a{
 
 .categoria h3{
     color:#123d93;
-    font-size:30px;
+    font-size:28px;
     margin:20px 0;
 }
 
 .categoria p{
+    padding:0 20px 20px;
     font-size:18px;
-    padding:0 15px;
 }
 
-/* BOTÓN */
 .categoria button{
-    margin-top:15px;
     background:#123d93;
     color:white;
     border:none;
     padding:12px 25px;
     border-radius:8px;
-    font-size:18px;
+    margin-bottom:20px;
     cursor:pointer;
 }
 
@@ -152,35 +144,23 @@ footer{
     background:#123d93;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:30px;
     margin-top:50px;
 }
 
 /* MÓVILES */
 @media(max-width:768px){
 
-    nav a{
-        font-size:16px;
-    }
-
     .logo{
-        width:150px;
+        width:140px;
     }
 
     .encabezado h1{
-        font-size:32px;
-    }
-
-    .encabezado p{
-        font-size:18px;
+        font-size:30px;
     }
 
     .hero h2{
-        font-size:36px;
-    }
-
-    .hero p{
-        font-size:20px;
+        font-size:34px;
     }
 
     .categoria img{
