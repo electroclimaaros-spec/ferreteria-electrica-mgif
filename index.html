@@ -1,153 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferretería Eléctrica MGIF</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferretería Eléctrica MGIF</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- MENÚ -->
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Marcas</a>
-        <a href="#">Contacto</a>
-    </nav>
+<!-- MENÚ -->
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#marcas">Marcas</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-    <!-- ENCABEZADO -->
-    <header class="encabezado">
+<!-- ENCABEZADO -->
+<header class="encabezado">
 
-        <img src="logo-mgif.png.PNG"
-     alt="Ferretería Eléctrica MGIF"
-     class="logo">
+    <img src="logo-mgif.png.PNG"
+         alt="Ferretería Eléctrica MGIF"
+         class="logo">
 
-        <h1>Ferretería Eléctrica MGIF</h1>
+</header>
 
-        <p>
-            Todo en materiales eléctricos para hogares,
-            comercios e industrias
-        </p>
+<!-- BUSCADOR -->
+<section class="buscador">
 
-    </header>
+    <input type="text" placeholder="Buscar productos...">
 
-    <!-- BUSCADOR -->
-    <section class="buscador">
-        <input type="text" placeholder="Buscar productos...">
-        <button>Buscar</button>
-    </section>
+    <button>Buscar</button>
 
-    <!-- BIENVENIDA -->
-    <section class="hero">
-        <h2>Bienvenidos</h2>
+</section>
 
-        <p>
-            Automáticos, diferenciales, tubería EMT,
-            conductores y accesorios eléctricos.
-        </p>
-    </section>
+<!-- BIENVENIDA -->
+<section class="hero">
 
-    <!-- PRODUCTOS -->
-    <section class="categorias">
+    <h2>Bienvenidos</h2>
 
-        <div class="categoria">
-            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1000"
-                 alt="Automáticos">
+    <p>
+        Automáticos, diferenciales, tubería EMT,
+        conductores y accesorios eléctricos.
+    </p>
 
-            <h3>Automáticos Schneider</h3>
+</section>
 
-            <p>
-                Interruptores automáticos para instalaciones
-                residenciales e industriales.
-            </p>
+<!-- PRODUCTOS -->
+<section id="productos" class="categorias">
 
-            <button>Ver productos</button>
-        </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800"
+             alt="Automáticos">
 
-        <div class="categoria">
-            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1000"
-                 alt="Diferenciales">
+        <h3>Automáticos Schneider</h3>
 
-            <h3>Diferenciales</h3>
+        <p>Protección para instalaciones eléctricas.</p>
 
-            <p>
-                Protección contra fugas de corriente y máxima seguridad.
-            </p>
+        <button>Ver más</button>
 
-            <button>Ver productos</button>
-        </div>
+    </div>
 
-        <div class="categoria">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1000"
-                 alt="Tubería EMT">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800"
+             alt="Diferenciales">
 
-            <h3>Tubería EMT</h3>
+        <h3>Diferenciales</h3>
 
-            <p>
-                Tuberías y accesorios galvanizados para instalaciones eléctricas.
-            </p>
+        <p>Máxima seguridad para hogares e industrias.</p>
 
-            <button>Ver productos</button>
-        </div>
+        <button>Ver más</button>
 
-        <div class="categoria">
-            <img src="https://images.unsplash.com/photo-1563770660941-10a6360766a1?w=1000"
-                 alt="Conductores">
+    </div>
 
-            <h3>Cables y Conductores</h3>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1555963966-b7ae5404b6ed?w=800"
+             alt="Tubería EMT">
 
-            <p>
-                Conductores de cobre y aluminio para todo tipo de proyectos.
-            </p>
+        <h3>Tubería EMT</h3>
 
-            <button>Ver productos</button>
-        </div>
+        <p>Canalización eléctrica de calidad.</p>
 
-        <div class="categoria">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1000"
-                 alt="Tableros">
+        <button>Ver más</button>
 
-            <h3>Tableros Eléctricos</h3>
+    </div>
 
-            <p>
-                Tableros metálicos y gabinetes para uso domiciliario e industrial.
-            </p>
+</section>
 
-            <button>Ver productos</button>
-        </div>
+<!-- PIE -->
+<footer id="contacto">
 
-        <div class="categoria">
-            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1000"
-                 alt="Accesorios">
+    <h3>Ferretería Eléctrica MGIF</h3>
 
-            <h3>Accesorios</h3>
+    <p>
+        Todo en materiales eléctricos para hogares,
+        comercios e industrias.
+    </p>
 
-            <p>
-                Conectores, terminales, abrazaderas y materiales complementarios.
-            </p>
+    <p>La Ligua - Chile</p>
 
-            <button>Ver productos</button>
-        </div>
-
-    </section>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <h3>Ferretería Eléctrica MGIF</h3>
-
-        <p>
-            La Ligua - Chile
-        </p>
-
-        <p>
-            WhatsApp: +56 9 XXXX XXXX
-        </p>
-
-        <p>
-            contacto@mgif.cl
-        </p>
-    </footer>
+</footer>
 
 </body>
 </html>
