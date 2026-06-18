@@ -1,26 +1,3 @@
-const botonesFiltro = document.querySelectorAll(".categorias button");
-const tarjetas = document.querySelectorAll(".card");
-
-botonesFiltro.forEach(boton => {
-
-    boton.addEventListener("click", () => {
-
-        const filtro = boton.dataset.filtro;
-
-        tarjetas.forEach(card => {
-
-            if (card.dataset.categoria === filtro) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
-
-        });
-
-    });
-
-});
-
 const botonesCarrito = document.querySelectorAll(".carrito");
 const listaCarrito = document.getElementById("lista-carrito");
 const totalTexto = document.getElementById("total");
@@ -33,14 +10,14 @@ botonesCarrito.forEach(boton => {
 
         const tarjeta = boton.parentElement;
 
-        const nombre = tarjeta.querySelector("h3").textContent;
+        const nombre = tarjeta.querySelector("h3").innerText;
 
-        const precio = parseInt(
-            tarjeta.querySelector("p")
-            .textContent
-            .replace("$", "")
-            .replace(".", "")
-        );
+        let textoPrecio = tarjeta.querySelector("p").innerText;
+
+        textoPrecio = textoPrecio.replace("$", "");
+        textoPrecio = textoPrecio.replace(".", "");
+
+        const precio = Number(textoPrecio);
 
         const item = document.createElement("li");
 
@@ -52,14 +29,15 @@ botonesCarrito.forEach(boton => {
         listaCarrito.appendChild(item);
 
         total += precio;
-        totalTexto.textContent = total;
+        totalTexto.innerText = total;
 
         item.querySelector(".eliminar").addEventListener("click", () => {
 
             listaCarrito.removeChild(item);
 
             total -= precio;
-            totalTexto.textContent = total;
+
+            totalTexto.innerText = total;
 
         });
 
