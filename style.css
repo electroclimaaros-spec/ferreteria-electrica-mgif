@@ -178,3 +178,19 @@ footer p{
 img{
     max-width:100%;
 }
+.carrito{
+    background:white;
+    margin:40px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+.carrito h2{
+    color:#1f45a7;
+    margin-bottom:20px;
+}
+.carrito p{
+    font-size:22px;
+    margin:15px;
+}
