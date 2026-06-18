@@ -16,13 +16,17 @@ botonesCarrito.forEach(boton => {
 
         const nombre = tarjeta.querySelector("h3").innerText;
 
-        let precioTexto = tarjeta.querySelector("p").innerText;
+        const precio = Number(
+            tarjeta.querySelector("p")
+                .innerText
+                .replace(/\$/g, "")
+                .replace(/\./g, "")
+                .trim()
+        );
 
-        precioTexto = precioTexto.replace("$", "").replace(".", "");
-
-        const precio = Number(precioTexto);
-
-        if (isNaN(precio)) return;
+        if (isNaN(precio)) {
+            return;
+        }
 
         const item = document.createElement("li");
 
@@ -34,6 +38,7 @@ botonesCarrito.forEach(boton => {
         listaCarrito.appendChild(item);
 
         total += precio;
+
         actualizarTotal();
 
         const botonEliminar = item.querySelector(".eliminar");
@@ -42,7 +47,9 @@ botonesCarrito.forEach(boton => {
 
             total -= precio;
 
-            if (total < 0) total = 0;
+            if (total < 0) {
+                total = 0;
+            }
 
             item.remove();
 
