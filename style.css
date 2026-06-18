@@ -108,3 +108,31 @@ font-size:18px;
 nav a:hover{
 color:#0D47A1;
 }
+.buscador{
+background:white;
+padding:20px;
+text-align:center;
+}
+
+.buscador input{
+width:60%;
+padding:12px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+.buscador button{
+padding:12px 20px;
+background:#0D47A1;
+color:white;
+border:none;
+border-radius:10px;
+font-size:16px;
+margin-left:10px;
+cursor:pointer;
+}
+
+.buscador button:hover{
+background:#1565C0;
+}
