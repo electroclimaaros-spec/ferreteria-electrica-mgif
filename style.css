@@ -16,8 +16,8 @@ nav{
     background:#f39c34;
     display:flex;
     justify-content:center;
-    gap:30px;
-    padding:20px;
+    gap:20px;
+    padding:15px;
     flex-wrap:wrap;
 }
 
@@ -33,28 +33,29 @@ nav a{
 .encabezado{
     background:white;
     text-align:center;
-    padding:30px 20px;
+    padding:10px 15px 25px;
 }
 
 .logo{
-    width:450px;
-    max-width:95%;
+    width:280px;
+    max-width:80%;
     display:block;
-    margin:0 auto 20px auto;
+    margin:10px auto;
 }
 
 .encabezado h1{
     color:#123d93;
-    font-size:60px;
-    margin-bottom:20px;
+    font-size:55px;
+    margin-bottom:15px;
 }
 
 .encabezado p{
     color:#ef7d22;
-    font-size:28px;
+    font-size:22px;
     font-weight:bold;
     max-width:900px;
     margin:auto;
+    line-height:1.4;
 }
 
 /* BUSCADOR */
@@ -63,26 +64,26 @@ nav a{
     display:flex;
     justify-content:center;
     gap:20px;
-    padding:40px 20px;
+    padding:30px 20px;
     flex-wrap:wrap;
 }
 
 .buscador input{
     width:500px;
     max-width:100%;
-    padding:20px;
+    padding:18px;
     border-radius:15px;
     border:1px solid #ccc;
-    font-size:24px;
+    font-size:20px;
 }
 
 .buscador button{
     background:#123d93;
     color:white;
     border:none;
-    padding:20px 40px;
+    padding:18px 35px;
     border-radius:15px;
-    font-size:24px;
+    font-size:20px;
     cursor:pointer;
 }
 
@@ -90,24 +91,24 @@ nav a{
     background:#0d2d6d;
 }
 
-/* HERO */
+/* BIENVENIDA */
 
 .hero{
-    background:#f4f4f4;
     text-align:center;
-    padding:60px 20px;
+    padding:50px 20px;
 }
 
 .hero h2{
     color:#123d93;
-    font-size:70px;
-    margin-bottom:40px;
+    font-size:60px;
+    margin-bottom:30px;
 }
 
 .hero p{
-    font-size:28px;
-    max-width:1000px;
+    font-size:26px;
+    max-width:900px;
     margin:auto;
+    line-height:1.5;
 }
 
 /* CATEGORÍAS */
@@ -115,27 +116,54 @@ nav a{
 .categorias{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    padding:50px 30px;
+    gap:25px;
+    padding:40px 25px;
 }
 
 .categoria{
     background:#123d93;
     color:white;
-    padding:30px;
+    padding:25px;
     border-radius:20px;
     text-align:center;
-    font-size:28px;
+    font-size:24px;
     font-weight:bold;
 }
 
-/* PIE DE PÁGINA */
+/* TARJETAS DE PRODUCTOS */
+
+.producto{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.producto img{
+    width:100%;
+    display:block;
+}
+
+.producto h3{
+    color:#123d93;
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+}
+
+.producto p{
+    text-align:center;
+    padding-bottom:20px;
+    font-size:22px;
+}
+
+/* FOOTER */
 
 footer{
     background:#123d93;
     color:white;
     text-align:center;
-    padding:40px 20px;
+    padding:35px 20px;
 }
 
 footer h3{
@@ -158,8 +186,12 @@ footer p{
         font-size:16px;
     }
 
+    .logo{
+        width:220px;
+    }
+
     .encabezado h1{
-        font-size:32px;
+        font-size:34px;
     }
 
     .encabezado p{
@@ -167,22 +199,18 @@ footer p{
     }
 
     .hero h2{
-        font-size:40px;
+        font-size:42px;
     }
 
     .hero p{
         font-size:18px;
     }
 
-    .buscador input{
-        font-size:18px;
+    .producto h3{
+        font-size:22px;
     }
 
-    .buscador button{
+    .producto p{
         font-size:18px;
-    }
-
-    .categoria{
-        font-size:20px;
     }
 }
