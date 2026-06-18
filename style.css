@@ -177,3 +177,27 @@ button:hover{
 .card button{
     margin-top:15px;
 }
+.encabezado{
+    background: white;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    width:100%;
+    max-width:450px;
+    display:block;
+    margin:auto;
+}
+
+.encabezado h1{
+    color:#002d72;
+    font-size:38px;
+    margin-top:15px;
+}
+
+.encabezado p{
+    color:#ff7300;
+    font-size:18px;
+    font-weight:bold;
+}
