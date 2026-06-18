@@ -21,8 +21,7 @@ botonesFiltro.forEach(boton => {
 
 });
 
-
-const botonesCarrito = document.querySelectorAll(".card button");
+const botonesCarrito = document.querySelectorAll(".carrito");
 const listaCarrito = document.getElementById("lista-carrito");
 const totalTexto = document.getElementById("total");
 
@@ -45,13 +44,24 @@ botonesCarrito.forEach(boton => {
 
         const item = document.createElement("li");
 
-        item.textContent = nombre + " - $" + precio;
+        item.innerHTML = `
+        ${nombre} - $${precio}
+        <button class="eliminar">❌</button>
+        `;
 
         listaCarrito.appendChild(item);
 
         total += precio;
-
         totalTexto.textContent = total;
+
+        item.querySelector(".eliminar").addEventListener("click", () => {
+
+            listaCarrito.removeChild(item);
+
+            total -= precio;
+            totalTexto.textContent = total;
+
+        });
 
     });
 
