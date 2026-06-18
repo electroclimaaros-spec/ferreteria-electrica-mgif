@@ -5,18 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ferretería Eléctrica MGIF</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
+
 <nav>
 <a href="#">Inicio</a>
 <a href="#">Productos</a>
 <a href="#">Marcas</a>
 <a href="#">Contacto</a>
 </nav>
-
-
 
 <section class="buscador">
 <input type="text" placeholder="Buscar productos...">
@@ -28,13 +26,13 @@
 <p>Materiales eléctricos y soluciones profesionales</p>
 </header>
 
-
 <section class="hero">
 <h2>Bienvenidos</h2>
 <p>
 Automáticos, diferenciales, tubería EMT, conductores y accesorios eléctricos.
 </p>
 </section>
+
 <section class="categorias">
 
 <button data-filtro="automaticos">Automáticos</button>
@@ -50,6 +48,7 @@ Automáticos, diferenciales, tubería EMT, conductores y accesorios eléctricos.
 <button data-filtro="accesorios">Accesorios</button>
 
 </section>
+
 <section class="productos">
 
 <div class="card" data-categoria="automaticos">
@@ -96,8 +95,9 @@ Automáticos, diferenciales, tubería EMT, conductores y accesorios eléctricos.
 
 </section>
 
+<!-- IMPORTANTE: CAMBIAR carrito POR carrito-compras -->
+<section class="carrito-compras">
 
-<section class="carrito">
 <h2>Carrito de compras</h2>
 
 <ul id="lista-carrito"></ul>
@@ -105,11 +105,13 @@ Automáticos, diferenciales, tubería EMT, conductores y accesorios eléctricos.
 <h3>Total: $<span id="total">0</span></h3>
 
 </section>
+
 <footer>
 Ferretería Eléctrica MGIF<br>
 La Ligua - Chile
 </footer>
 
-</body>
 <script src="script.js"></script>
+
+</body>
 </html>
