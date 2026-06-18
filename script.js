@@ -4,6 +4,10 @@ const totalTexto = document.getElementById("total");
 
 let total = 0;
 
+function actualizarTotal() {
+    totalTexto.innerText = total;
+}
+
 botonesCarrito.forEach(boton => {
 
     boton.addEventListener("click", () => {
@@ -14,10 +18,11 @@ botonesCarrito.forEach(boton => {
 
         let precioTexto = tarjeta.querySelector("p").innerText;
 
-        precioTexto = precioTexto.replace("$", "");
-        precioTexto = precioTexto.replace(".", "");
+        precioTexto = precioTexto.replace("$", "").replace(".", "");
 
         const precio = Number(precioTexto);
+
+        if (isNaN(precio)) return;
 
         const item = document.createElement("li");
 
@@ -29,15 +34,19 @@ botonesCarrito.forEach(boton => {
         listaCarrito.appendChild(item);
 
         total += precio;
-        totalTexto.innerText = total;
+        actualizarTotal();
 
-        item.querySelector(".eliminar").addEventListener("click", () => {
+        const botonEliminar = item.querySelector(".eliminar");
 
-            listaCarrito.removeChild(item);
+        botonEliminar.addEventListener("click", () => {
 
             total -= precio;
 
-            totalTexto.innerText = total;
+            if (total < 0) total = 0;
+
+            item.remove();
+
+            actualizarTotal();
 
         });
 
