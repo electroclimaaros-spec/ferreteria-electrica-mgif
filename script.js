@@ -4,7 +4,7 @@ const totalTexto = document.getElementById("total");
 
 let total = 0;
 
-botonesCarrito.forEach((boton) => {
+botonesCarrito.forEach(boton => {
 
     boton.addEventListener("click", () => {
 
@@ -17,19 +17,18 @@ botonesCarrito.forEach((boton) => {
         precioTexto = precioTexto.replace("$", "");
         precioTexto = precioTexto.replace(".", "");
 
-        const precio = parseInt(precioTexto);
+        const precio = Number(precioTexto);
 
         const item = document.createElement("li");
 
         item.innerHTML = `
-        ${nombre} - $${precio}
-        <button class="eliminar">❌</button>
+            ${nombre} - $${precio}
+            <button class="eliminar">❌</button>
         `;
 
         listaCarrito.appendChild(item);
 
         total += precio;
-
         totalTexto.innerText = total;
 
         item.querySelector(".eliminar").addEventListener("click", () => {
