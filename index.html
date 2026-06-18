@@ -1,117 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ferretería Eléctrica MGIF</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería Eléctrica MGIF</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Productos</a>
-<a href="#">Marcas</a>
-<a href="#">Contacto</a>
-</nav>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Marcas</a>
+        <a href="#">Contacto</a>
+    </nav>
 
-<section class="buscador">
-<input type="text" placeholder="Buscar productos...">
-<button>Buscar</button>
-</section>
+    <header class="encabezado">
 
-<header>
-<h1>Ferretería Eléctrica MGIF</h1>
-<p>Materiales eléctricos y soluciones profesionales</p>
-</header>
+        <img src="logo-mgif.jpg" alt="Ferretería Eléctrica MGIF" class="logo">
 
-<section class="hero">
-<h2>Bienvenidos</h2>
-<p>
-Automáticos, diferenciales, tubería EMT, conductores y accesorios eléctricos.
-</p>
-</section>
+        <h1>Ferretería Eléctrica MGIF</h1>
 
-<section class="categorias">
+        <p>
+            Todo en materiales eléctricos para hogares, comercios e industrias
+        </p>
 
-<button data-filtro="automaticos">Automáticos</button>
+    </header>
 
-<button data-filtro="diferenciales">Diferenciales</button>
+    <section class="buscador">
+        <input type="text" placeholder="Buscar productos...">
+        <button>Buscar</button>
+    </section>
 
-<button data-filtro="emt">Tubería EMT</button>
+    <section class="hero">
+        <h2>Bienvenidos</h2>
+        <p>
+            Automáticos, diferenciales, tubería EMT, conductores y accesorios eléctricos.
+        </p>
+    </section>
 
-<button data-filtro="cables">Cables</button>
+    <section class="categorias">
 
-<button data-filtro="tableros">Tableros</button>
+        <button data-filtro="automaticos">Automáticos</button>
 
-<button data-filtro="accesorios">Accesorios</button>
+        <button data-filtro="diferenciales">Diferenciales</button>
 
-</section>
+        <button data-filtro="emt">Tubería EMT</button>
 
-<section class="productos">
+        <button data-filtro="cables">Cables</button>
 
-<div class="card" data-categoria="automaticos">
-<img src="https://images.unsplash.com/photo-1581092919535-7146ff1a590b">
-<h3>Automáticos Schneider</h3>
-<p>$8.990</p>
-<button class="carrito">Agregar al carrito</button>
-</div>
+        <button data-filtro="tableros">Tableros</button>
 
-<div class="card" data-categoria="diferenciales">
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952">
-<h3>Diferenciales Legrand</h3>
-<p>$16.990</p>
-<button class="carrito">Agregar al carrito</button>
-</div>
+        <button data-filtro="accesorios">Accesorios</button>
 
-<div class="card" data-categoria="emt">
-<img src="https://images.unsplash.com/photo-1565608438257-fac3c27beb36">
-<h3>Tubería EMT 20 mm</h3>
-<p>$4.990</p>
-<button class="carrito">Agregar al carrito</button>
-</div>
+    </section>
 
-<div class="card" data-categoria="cables">
-<img src="https://images.unsplash.com/photo-1555963966-b7ae5404b6ed">
-<h3>Cable EVA 2,5 mm²</h3>
-<p>$54.990</p>
-<button class="carrito">Agregar al carrito</button>
-</div>
+    <section class="productos">
 
-<div class="card" data-categoria="tableros">
-<img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232">
-<h3>Tablero Embutido 24 Módulos</h3>
-<p>$29.990</p>
-<button class="carrito">Agregar al carrito</button>
-</div>
+        <div class="card" data-categoria="automaticos">
+            <img src="https://images.unsplash.com/photo-1581092919535-7146ff1a590b">
+            <h3>Automáticos Schneider</h3>
+            <p>$8.990</p>
+            <button class="carrito">Agregar al carrito</button>
+        </div>
 
-<div class="card" data-categoria="accesorios">
-<img src="https://images.unsplash.com/photo-1565608438257-fac3c27beb36">
-<h3>Curvas y Coplas EMT</h3>
-<p>$2.990</p>
-<button class="carrito">Agregar al carrito</button>
-</div>
+        <div class="card" data-categoria="diferenciales">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952">
+            <h3>Diferenciales Legrand</h3>
+            <p>$16.990</p>
+            <button class="carrito">Agregar al carrito</button>
+        </div>
 
-</section>
+        <div class="card" data-categoria="emt">
+            <img src="https://images.unsplash.com/photo-1565608438257-fac3c27beb36">
+            <h3>Tubería EMT 20 mm</h3>
+            <p>$4.990</p>
+            <button class="carrito">Agregar al carrito</button>
+        </div>
 
-<!-- IMPORTANTE: CAMBIAR carrito POR carrito-compras -->
-<section class="carrito-compras">
+        <div class="card" data-categoria="cables">
+            <img src="https://images.unsplash.com/photo-1555963966-b7ae5404b6ed">
+            <h3>Cable EVA 2,5 mm²</h3>
+            <p>$54.990</p>
+            <button class="carrito">Agregar al carrito</button>
+        </div>
 
-<h2>Carrito de compras</h2>
+        <div class="card" data-categoria="tableros">
+            <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232">
+            <h3>Tablero Embutido 24 Módulos</h3>
+            <p>$29.990</p>
+            <button class="carrito">Agregar al carrito</button>
+        </div>
 
-<ul id="lista-carrito"></ul>
+        <div class="card" data-categoria="accesorios">
+            <img src="https://images.unsplash.com/photo-1565608438257-fac3c27beb36">
+            <h3>Curvas y Coplas EMT</h3>
+            <p>$2.990</p>
+            <button class="carrito">Agregar al carrito</button>
+        </div>
 
-<h3>Total: $<span id="total">0</span></h3>
+    </section>
 
-</section>
+    <section class="carrito">
 
-<footer>
-Ferretería Eléctrica MGIF<br>
-La Ligua - Chile
-</footer>
+        <h2>Carrito de compras</h2>
 
-<script src="script.js"></script>
+        <ul id="lista-carrito"></ul>
+
+        <h3>Total: $<span id="total">0</span></h3>
+
+    </section>
+
+    <footer>
+
+        <h3>Ferretería Eléctrica MGIF</h3>
+
+        <p>
+            Todo en materiales eléctricos para hogares, comercios e industrias.
+        </p>
+
+        <p>
+            La Ligua - Chile
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
