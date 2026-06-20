@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferretería Eléctrica MGIF</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- MENÚ -->
 <nav>
     <a href="#">Inicio</a>
@@ -16,185 +14,110 @@
     <a href="#marcas">Marcas</a>
     <a href="#contacto">Contacto</a>
 </nav>
-
 <!-- ENCABEZADO -->
 <header class="encabezado">
-
-    <img src="logo-mgif.png.PNG"
+    <img src="logo-mgif.png"
          alt="Ferretería Eléctrica MGIF"
          class="logo">
-
 </header>
-
 <!-- BUSCADOR -->
 <section class="buscador">
-
-    <input type="text"
-           placeholder="Buscar productos...">
-
+    <input
+        type="text"
+        placeholder="Buscar productos...">
     <button>Buscar</button>
-
 </section>
-
 <!-- BIENVENIDA -->
 <section class="hero">
-
     <h2>Bienvenidos</h2>
-
     <p>
         Automáticos, diferenciales, tubería EMT,
         conductores y accesorios eléctricos.
     </p>
-
 </section>
-
 <!-- PRODUCTOS -->
 <section id="productos" class="categorias">
-
-    <!-- PRODUCTO 1 -->
     <div class="card">
-
         <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800"
              alt="Automáticos">
-
         <h3>Automáticos Schneider</h3>
-
         <p>$12.990</p>
-
-        <button onclick="agregarProducto(12990)">
+        <button onclick="agregarProducto('Automáticos Schneider',12990)">
             Agregar al carrito
         </button>
-
     </div>
-
-    <!-- PRODUCTO 2 -->
     <div class="card">
-
         <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800"
              alt="Diferenciales">
-
         <h3>Diferenciales Legrand</h3>
-
         <p>$16.990</p>
-
-        <button onclick="agregarProducto(16990)">
+        <button onclick="agregarProducto('Diferenciales Legrand',16990)">
             Agregar al carrito
         </button>
-
     </div>
-
-    <!-- PRODUCTO 3 -->
     <div class="card">
-
         <img src="https://images.unsplash.com/photo-1555963966-b7ae5404b6ed?w=800"
-             alt="EMT">
-
+             alt="Tubería EMT">
         <h3>Tubería EMT 20 mm</h3>
-
         <p>$7.990</p>
-
-        <button onclick="agregarProducto(7990)">
+        <button onclick="agregarProducto('Tubería EMT 20 mm',7990)">
             Agregar al carrito
         </button>
-
     </div>
-
-    <!-- PRODUCTO 4 -->
     <div class="card">
-
         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
              alt="Curvas EMT">
-
         <h3>Curvas EMT</h3>
-
         <p>$2.990</p>
-
-        <button onclick="agregarProducto(2990)">
+        <button onclick="agregarProducto('Curvas EMT',2990)">
             Agregar al carrito
         </button>
-
     </div>
-
-    <!-- PRODUCTO 5 -->
     <div class="card">
-
         <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800"
-             alt="Coplas EMT">
-
-        <h3>Coplas EMT</h3>
-
-        <p>$1.990</p>
-
-        <button onclick="agregarProducto(1990)">
-            Agregar al carrito
-        </button>
-
-    </div>
-
-    <!-- PRODUCTO 6 -->
-    <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800"
              alt="Conductores">
-
         <h3>Conductores Eléctricos</h3>
-
         <p>$24.990</p>
-
-        <button onclick="agregarProducto(24990)">
+        <button onclick="agregarProducto('Conductores Eléctricos',24990)">
             Agregar al carrito
         </button>
-
     </div>
-
 </section>
-
 <!-- MARCAS -->
 <section id="marcas" class="hero">
-
     <h2>Marcas</h2>
-
     <p>
-        Schneider Electric · Legrand · Bticino · Philips · Halux · Dairu
+        Schneider Electric · Legrand · Bticino · Philips · Halux
     </p>
-
 </section>
-
 <!-- CARRITO -->
 <section class="carrito">
-
     <h2>Carrito de Compras</h2>
-
+    <ul id="lista-carrito"></ul>
     <p>
         Productos:
         <span id="cantidad">0</span>
     </p>
-
     <p>
         Total:
         $
         <span id="total">0</span>
     </p>
-
+    <button onclick="vaciarCarrito()">
+        Vaciar carrito
+    </button>
 </section>
-
 <!-- PIE DE PÁGINA -->
 <footer id="contacto">
-
     <h3>Ferretería Eléctrica MGIF</h3>
-
     <p>
         Todo en materiales eléctricos para hogares,
         comercios e industrias.
     </p>
-
     <p>
         La Ligua - Chile
     </p>
-
 </footer>
-
 <script src="script.js"></script>
-
 </body>
 </html>
